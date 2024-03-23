@@ -1,0 +1,1 @@
+Maaf pak, laptop saya habis install ulang, jadinya banyak file dan aplikasi yang hilang jadi ngumpulkannya telat
