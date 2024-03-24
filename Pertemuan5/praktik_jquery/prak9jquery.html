@@ -1,26 +1,30 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styleCSS.css">
         <script src="jquery-3.7.1.js"></script>
         <script>
-        $(document).ready(function(){
-            $("#btn1").click(function(){
-                $("#test1").text("<b>Hello World</b>");
+            $(document).ready(function(){
+                $(".btn1").click(function(){
+                    $("h1, h2, p").addClass("blue");
+                    $("div").addClass("important");
+                });
+                    $(".btn2").click(function(){
+                    $("h1, h2, p").removeClass("blue");
+                });
+                    $(".btn3").click(function(){
+                    $("h1, h2, p, div").css({"background-color": "yellow", "font-size": "100%"});
+                });
             });
-            $("#btn2").click(function(){
-                $("#test2").html("<b>Hello World!</b>");
-            });
-            $("#btn3").click(function(){
-                $("#test3").val("Polinema");
-            });
-        });
-        </script>
-        </head>
-        <body>
-            <p id="test1">This is the first paragraph.</p>
-            <p id="test2">This is <b> another </b> paragraph.</p>
-            <p>Your Name: <input type="text" id="test3"></p>
-            <button id="btnl">Set Text</button>
-            <button id="btn2">Set HTML</button>
-            <button id="btn3">Set Value</button>
-    </body>
+                </script>
+                </head>
+                <body>
+                    <h1>Heading 1</hi>
+                    <h2>Heading 2</h2>
+                    <p>This is a paragraph.</p>
+                    <p>This is another paragraph.</p>
+                    <div>This is some important text!</div><br>
+                    <button class="btn1">Add classes to elements</button>
+                    <button class="btn2">Remove classes to elements</button>
+                    <button class="btn3">Set classes to elements</button>
+            </body> 
 </html>
